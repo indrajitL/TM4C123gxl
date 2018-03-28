@@ -12,7 +12,7 @@ int main(void)
 {
     SYSCTL_RCGCGPIO_R |= 1U << 5U; /* enable clock to GPIOF */
 
-    GPIO_PORTF_DIR_R |= 0x0F; // Direction set for gpio pins
+    GPIO_PORTF_DIR_R |= 0x0E; // Direction set for gpio pins
 
     GPIO_PORTF_DEN_R |= 0xFF; // Enable GPIO digital function for pins
     while(1){
